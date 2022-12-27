@@ -1,16 +1,23 @@
-#include <stdio.h>
+#include<stdio.h>
 
-int main() {
-    for (int i = 0; i < 5; i++) {
-        for (int j = 0; j < 5; j++) {
-            if (i == 0 || i == 4 || j == 0 || j == 4) {
-                printf("*");
-            } else {
-                printf(" ");
-            }
-        }
-        printf("\n");
-    }
+int main(){
+	int rows, a, b;
+	printf("Enter number of rows\n");
+	scanf("%d", &rows);
 
-    return 0;
+	
+	for(a = 0; a < rows; a++)  
+	{
+		
+		for(b = 0; b < rows; b++) 
+		{
+			
+			if(a==0 || a==rows-1 || b==0 || b==rows-1) 
+				printf("*"); 
+			else 
+				printf(" "); 
+		}
+		printf("\n"); 
+	}
+	return 0;
 }
